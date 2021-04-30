@@ -1,0 +1,22 @@
+.preview-protion {
+  width: 100%;
+  height: 100%;
+  margin-top: -32px;
+  overflow: hidden;
+}
+:global(.diy-preview) {
+  /deep/ img {
+    display: inline-block;
+    width: auto;
+    height: 100%;
+  }
+  embed {
+    width: 100%;
+    height: calc(100% + 57px);
+    margin-top: -67px;
+  }
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}

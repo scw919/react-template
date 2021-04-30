@@ -1,0 +1,38 @@
+@headerHeight: 50px; /* 自定义头部高度, 默认 48. ( 建议大小：48-70px ) */
+.umi-plugin-layout-main {
+  > .ant-layout {
+    &.ant-layout-has-sider {
+      > aside {
+        // 左侧导航栏
+        &.ant-layout-sider {
+          padding-top: @headerHeight !important;
+        }
+      }
+    }
+    > .ant-layout {
+      header {
+        // 顶部导航栏
+        &.ant-layout-header {
+          height: @headerHeight !important;
+          line-height: @headerHeight !important;
+          // 二级菜单拆分
+          > .ant-pro-top-nav-header {
+            // 左侧logo
+            // .ant-pro-top-nav-header-main-left{
+
+            // }
+            // 中间一级菜单列表
+            .ant-pro-top-nav-header-menu {
+              // 右侧工具菜单
+              + div {
+                div.ant-space-horizontal {
+                  height: @headerHeight !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

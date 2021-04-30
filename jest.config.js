@@ -1,13 +1,10 @@
 module.exports = {
-  preset: '@vue/cli-plugin-unit-jest',
-  collectCoverage: true,
-  collectCoverageFrom: [
-    // '**/*.{vue,js,jsx}',
-    '**/src/basic-comps/*.{vue,js,jsx}',
-    '**/src/components/*.{vue,js,jsx}',
-    // '**/src/utils/*.{js,jsx}',
-    '!**/node_modules/**',
-    '!**/vendor/**',
-    '!**/dist/**'
-  ]
-}
+  testURL: 'http://localhost:8000',
+  testEnvironment: './tests/PuppeteerEnvironment',
+  verbose: false,
+  extraSetupFiles: ['./tests/setupTests.js'],
+  globals: {
+    ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION: false,
+    localStorage: null,
+  },
+};

@@ -1,0 +1,30 @@
+{
+  "id": "1736218",
+  "name": "cid-data-monitoring",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "20161931",
+      "name": "包心菜",
+      "font_class": "baoxincai",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "19858728",
+      "name": "线性春",
+      "font_class": "xianxingchun",
+      "unicode": "e7bd",
+      "unicode_decimal": 59325
+    },
+    {
+      "icon_id": "485842",
+      "name": "1 ",
+      "font_class": "1",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    }
+  ]
+}
